@@ -40,7 +40,7 @@ resource "aws_s3_bucket_versioning" "versionings3" {
 
 # STATIC SITE
 resource "aws_s3_bucket_website_configuration" "sites3" {
-  bucket = aws_s3_bucket.s3-guilherme-fiap.id
+  bucket = aws_s3_bucket.93629.id
 
   index_document {
     suffix = "index.html"
