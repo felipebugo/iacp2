@@ -52,7 +52,7 @@ resource "aws_s3_bucket_website_configuration" "sites3" {
 }
 
 # S3 BUCKET OBJECTS
-resource "aws_s3_bucket_object" "93629-objects" {
+resource "aws_s3_bucket_object" "93629" {
     bucket   = aws_s3_bucket.93629.id
     for_each = fileset("data/", "*")
     key      = each.value
