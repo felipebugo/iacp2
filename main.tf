@@ -58,3 +58,4 @@ resource "aws_s3_bucket_object" "93629-objects" {
     key      = each.value
     source   = "data/${each.value}"
     content_type = "text/html"
+	
